@@ -15,43 +15,71 @@ public class ex5 {
 		
 		
 		int futureDay = (dayNumber + elapsedDay) % 7;
-		String futureDayOfTheWeek = "";
-		
-		String day = "";
 		
 		
+		String day;
+		String futureDayOfWeek;
 		
-		if (dayNumber == 0 ) {
+		switch(dayNumber) {
+		case 0:
 			day = "Sunday";
-			
-		}
-		else if(dayNumber == 1){
+			break;
+		case 1:
 			day = "Monday";
-
-
-		}
-		else if(dayNumber == 2){
+			break;
+		case 2:
 			day = "Tuesday";
-			
-		}
-		else if(dayNumber == 3){
+			break;
+		case 3:
 			day = "Wednesday";
-			
-		}
-		else if(dayNumber == 4){
+			break;
+		case 4:
 			day = "Thrusday";
-			
-		}
-		else if(dayNumber == 5){
+			break;
+		case 5:
 			day = "Friday";
-			
-		}
-		else if(dayNumber == 6){
+			break;
+		case 6:
 			day = "Saturday";
-			
+			break;
+		default :
+			day = "Error";
 		}
 		
-		System.out.println("Today is " + day + "Future day is " + futureDayOfTheWeek);
+		switch(elapsedDay) {
+		case 0:
+			futureDayOfWeek = "Sunday";
+			break;
+		case 1:
+			futureDayOfWeek = "Monday";
+			break;
+		case 2:
+			futureDayOfWeek = "Tuesday";
+			break;
+		case 3:
+			futureDayOfWeek = "Wednesday";
+			break;
+		case 4:
+			futureDayOfWeek = "Thrusday";
+			break;
+		case 5:
+			futureDayOfWeek = "Friday";
+			break;
+		case 6:
+			futureDayOfWeek = "Saturday";
+			break;
+		default :
+			futureDayOfWeek = "Error";
+		}
 		
+		
+		System.out.println("Todays day " + day + "future day is " + futureDayOfWeek);
+		
+			
+			
+			
+			
+			
+		}
+
 	}
-}
