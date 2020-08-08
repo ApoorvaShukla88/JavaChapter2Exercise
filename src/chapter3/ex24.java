@@ -6,25 +6,26 @@ public class ex24 {
 	public static void main(String[] args) {
 		
 		int rank = (int)(Math.random() * 13 + 1);
+		int suit = (int)
 		
 		String r, s = "";
 		
 		
-//		switch(s) {
-//		case 1:
-//			s = "Spade";
-//			break;
-//		case 2:
-//			s = "Diamond";
-//			break;
-//		case 3:
-//			s = "Club";
-//			break;
-//		case 4:
-//			s = "Heart";
-//			break;	
-//			}
-//			System.out.println("Error");
+		switch(suit) {
+		case 1:
+			s = "Spade";
+			break;
+		case 2:
+			s = "Diamond";
+			break;
+		case 3:
+			s = "Club";
+			break;
+		case 4:
+			s = "Heart";
+			break;	
+			}
+			System.out.println("Error");
 			
 			
 			switch(rank) {
@@ -68,6 +69,7 @@ public class ex24 {
 				r = "King";
 				break;			
 		}
+			System.out.println("Card suit is " + );
 			System.out.println("Card rank is "+ rank);
 			
 		
