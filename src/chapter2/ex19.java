@@ -11,14 +11,19 @@ public class ex19 {
 		System.out.println("Enter three points of triangle : ");
 		System.out.println("Enter x1 :" );
 		int x1 = scan.nextInt();
+		
 		System.out.println("Enter y1 :");
 		int y1 = scan.nextInt();
+		
 		System.out.println("Enter x2 :" );
 		int x2 = scan.nextInt();
+		
 		System.out.println("Enter y2 :");
 		int y2 = scan.nextInt();
+		
 		System.out.println("Enter x3 :" );
 		int x3 = scan.nextInt();
+		
 		System.out.println("Enter y3 :");
 		int y3 = scan.nextInt();
 		
