@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ex4 {
 	public static void main(String[] args) {
 		
-		int month = (int)(Math.random() * 12);
+		int month = (int)(Math.random() * 12 + 1);
 //		Scanner scan = new Scanner(System.in);
 		
 //		System.out.println("Enter the number of the Month : ");

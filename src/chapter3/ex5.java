@@ -46,7 +46,7 @@ public class ex5 {
 			day = "Error";
 		}
 		
-		switch(elapsedDay) {
+		switch(futureDay) {
 		case 0:
 			futureDayOfWeek = "Sunday";
 			break;
