@@ -6,9 +6,12 @@ public class ex24 {
 	public static void main(String[] args) {
 		
 		int rank = (int)(Math.random() * 13 + 1);
-		int suit = (int)
+		int suit = (int)(Math.random() * 4 + 1);
 		
-		String r, s = "";
+		
+		
+		String s = "";
+		String r = ""; 
 		
 		
 		switch(suit) {
@@ -25,7 +28,7 @@ public class ex24 {
 			s = "Heart";
 			break;	
 			}
-			System.out.println("Error");
+//			System.out.println("Error");
 			
 			
 			switch(rank) {
@@ -69,8 +72,7 @@ public class ex24 {
 				r = "King";
 				break;			
 		}
-			System.out.println("Card suit is " + );
-			System.out.println("Card rank is "+ rank);
+			System.out.println("You picked the card " + s + " of " + r);
 			
 		
 		}
