@@ -7,14 +7,16 @@ public class ex15 {
 	public static void main(String[] args)
 	{
 	Scanner input = new Scanner(System.in);
-	int number = 1;
+	int number = 0;
 	System.out.println("Enter a letter : ");
 	
 	String l1 = input.nextLine();
 	char letter = l1.charAt(0);
 	
 	
-	  switch (letter) {
+	
+	
+	  switch (Character.toUpperCase(letter)) {
       case 'A':
       case 'B':
       case 'C':
@@ -56,13 +58,16 @@ public class ex15 {
       case 'Y':
       case 'Z':
           number = 9;
+          break;
+      case '+':
+      case '#':
+       System.out.println("Invalid Entry");
+    	  break;
       }
-	
-	
-	
+	if(number != 0) {
 	System.out.println("The corresponding number is : " + number);
-	
 	}
-}
+	
+}}
 
 
