@@ -45,17 +45,23 @@ public class Nestedloop {
 //	 54321
 //	654321
 		
-		System.out.println("Pattern D");
-		for(int i = 1; i <= 6; i++) {
-			for(int j = 1 ; j <= 6 ; j++) {
-				System.out.print((i>j) ? " " : j);
-			}
-		System.out.println();
-			
-		}
-		System.out.println();
-		
-		
+//		System.out.println("Pattern D");
+//		for(int i = 1; i <= 6; i++) {
+//			for(int j = 1 ; j <= 6 ; j++) {
+//				System.out.print((i>j) ? " " : j);
+//			}
+//		System.out.println();
+//			
+//		}
+//		System.out.println();
+//		
+//		Pattern D
+//		123456
+//		 23456
+//		  3456
+//		   456
+//		    56
+//		     6	
 		
 		
 	}}
