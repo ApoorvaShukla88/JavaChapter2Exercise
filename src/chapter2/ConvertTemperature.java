@@ -10,7 +10,7 @@ public class ConvertTemperature {
 	System.out.println("Enter temperature in Celcius :");
 	double celcius = input.nextDouble();
 	
-	double feh = ((9/5) * celcius + 32);
+	double feh = (((9.0 / 5) * celcius )+ 32);
     	
 	System.out.println("In Faherengheit is : " + feh);
 	
