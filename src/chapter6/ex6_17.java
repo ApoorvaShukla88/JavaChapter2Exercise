@@ -26,3 +26,9 @@ public class ex6_17 {
 	}
 	
 }
+// Output 
+//Enter the number for matrix : 
+//3
+//110
+//111
+//110
