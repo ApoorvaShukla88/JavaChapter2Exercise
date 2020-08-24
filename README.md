@@ -8,3 +8,4 @@
 #### 6. Nested loops, for loop
 #### 7. Arrays
 #### 8. Multidimensional array
+#### 12. Exception Handling
