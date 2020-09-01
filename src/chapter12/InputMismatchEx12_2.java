@@ -20,7 +20,7 @@ public class InputMismatchEx12_2{
 			}
 			catch (InputMismatchException e) {
 				System.out.println("Error, Please try again");
-					flag = false;
+					input.nextLine();
 			}
 		}while(flag);
 	}
