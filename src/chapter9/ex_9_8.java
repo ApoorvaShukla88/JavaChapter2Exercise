@@ -58,16 +58,16 @@ class Fan {
 	}
 	
 	Fan(){
-		this.color = color;
-		this.on = on;
-		this.radius = radius;
-		this.speed = speed;
+//		this.color = color;
+//		this.on = on;
+//		this.radius = radius;
+//		this.speed = speed;
 	}
 	
 	public String toString() {
 		String str;
 		if(this.on) 
-			str = "Fan Speed : " + this.speed + " Color is " + this.color + " Fan Radius " + this.radius;
+			str = "Fan Speed : " + this.speed + " ,Color is " + this.color + " ,Fan Radius " + this.radius;
 		else 
 			str = "Fan is OFF";
 		return str;

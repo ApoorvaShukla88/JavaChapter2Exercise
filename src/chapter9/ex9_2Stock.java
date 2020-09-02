@@ -5,7 +5,10 @@ public class ex9_2Stock{
 		
 		Stocks stock = new Stocks("ORCL ", "Oracle Corporation");
 	
-		System.out.println("Stock change percent " + stock.getChangePercent());
+		stock.setPreviousClosingPrice(34.5);
+		stock.setCurrentPrice(34.35);
+		
+		System.out.println("Percentage change : " + stock.getChangePercent());
 		
 	}
 }
