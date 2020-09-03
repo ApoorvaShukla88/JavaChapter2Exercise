@@ -27,6 +27,9 @@ public class ex9_6{
 	for(int i = 0; i < b.length; i++) {
     	System.out.print(b[i] + " ");
     }
+	
+	
+	
 		
 		
 	}
@@ -61,30 +64,30 @@ class Stopwatch {
 	private static long endTime;
 	private static long currentTime;
 	Stopwatch() {
-		this.startTime = System.currentTimeMillis();
-		this.currentTime = System.currentTimeMillis();
+		Stopwatch.startTime = System.currentTimeMillis();
+//		Stopwatch.currentTime = System.currentTimeMillis();
 	}
 	
 	
 	public long getStartTime() {
-		return this.startTime;
+		return Stopwatch.startTime;
 	}
 	public long getEndTime() {
-		return this.endTime;
+		return Stopwatch.endTime;
 	}
 	public void setStartTime(long startTime) {
-		this.startTime =startTime;
+		Stopwatch.startTime =startTime;
 	}
 	public void setEndTime(long endTime) {
-		this.endTime =endTime;
+		Stopwatch.endTime =endTime;
 	}
 	
 	public void start(long startTime) {
-		this.startTime = startTime;
+		Stopwatch.startTime = System.currentTimeMillis();
 		
 	}
 	public void stop(String endTime) {
-		this.endTime = currentTime;
+		Stopwatch.endTime = System.currentTimeMillis();;
 		
 	}
 	
