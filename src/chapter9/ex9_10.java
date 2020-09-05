@@ -12,9 +12,13 @@ public class ex9_10{
 		System.out.println(" Enter the value for c : ");
 		double c = input.nextDouble();
 		
-		QuadraticEq qe = new QuadraticEq();
+		QuadraticEq qe = new QuadraticEq(a, b, c);
 		double dis = qe.getDiscriminant();
 		System.out.println(dis);
+		qe.setDiscriminant(dis);
+		String sol = qe.getSolution();
+		System.out.println(sol);
+		
 		
 	}
 	
@@ -22,7 +26,15 @@ public class ex9_10{
 }
 class QuadraticEq{
 	private static double a, b, c, d;
-	QuadraticEq(){}
+	
+	double r1, r2;
+	QuadraticEq(double a, double b, double c){
+		this.a = a;
+		this.b = b;
+		this.c= c;
+		getDiscriminant();
+		
+	}
 	
 	public double getValueOfA () {
 		return a;
@@ -43,29 +55,34 @@ class QuadraticEq{
 		QuadraticEq.c= c;
 	}
 
-	public void setValueOfD (double d) {
-		QuadraticEq.d = d;
-	}
-	
-	
 	
 	public double getDiscriminant() {
-		double d = (b*b) - (4*a*c);
-		System.out.println(d);
+		double dis = (b*b) - (4.0*a*c);
+		return dis;
+	}
+	public void setDiscriminant(double d) {
+		this.d = d;
+	
+	}
+	
+	public String getSolution() {
 		if(d < 0) {
-			return 0;
-		}else {
-			System.out.println(d);
-		return d;
-	}}
+			return "No Roots";
+		}else if (d == 0){
+			return "One root only " + r1;
+			}
+		else {
+		return "Two roots :" + r1 + " and " +r2;
+		}
+	}
 	
 	public double getRoot1() {
-		double r1 = ((-b) + Math.sqrt(d)) / 2* a;
+		double r1 = (-b + Math.pow(d, 0.5)) / (2.0 * a);
 		return r1;
 		
 	}
 	public double getRoot2() {
-		double r2 = ((-b) + Math.sqrt(d)) / 2* a;
+		double r2 = (-b - Math.pow(d, 0.5)) / (2.0 * a);
 		return r2;
 		
 	}
