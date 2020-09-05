@@ -20,6 +20,7 @@ public class ex9_10{
 		System.out.println(sol);
 		
 		
+		
 	}
 	
 	
@@ -27,7 +28,7 @@ public class ex9_10{
 class QuadraticEq{
 	private static double a, b, c, d;
 	
-	double r1, r2;
+	private static double r1, r2;
 	QuadraticEq(double a, double b, double c){
 		this.a = a;
 		this.b = b;
@@ -69,10 +70,10 @@ class QuadraticEq{
 		if(d < 0) {
 			return "No Roots";
 		}else if (d == 0){
-			return "One root only " + r1;
+			return "One root only " + getRoot1();
 			}
 		else {
-		return "Two roots :" + r1 + " and " +r2;
+		return "Two roots :" + getRoot1() + " and " + getRoot2();
 		}
 	}
 	
@@ -81,9 +82,17 @@ class QuadraticEq{
 		return r1;
 		
 	}
+	public void setRoot1(double r1) {
+	QuadraticEq.r1 = r1;
+		
+	}
 	public double getRoot2() {
 		double r2 = (-b - Math.pow(d, 0.5)) / (2.0 * a);
 		return r2;
+		
+	}
+	public void setRoot2(double r2) {
+		QuadraticEq.r2 = r2;
 		
 	}
 	
