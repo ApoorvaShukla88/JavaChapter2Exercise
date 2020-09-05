@@ -6,7 +6,7 @@ import java.util.Random;
 public class ex9_6{
 	public static void main(String[] args) {
 		Stopwatch s = new Stopwatch();
-		s.getElapsedTime();
+		
 		int[] myArray = new int[10]; 
 		Random r = new Random(10);
 	
@@ -21,12 +21,14 @@ public class ex9_6{
 	        }
 	       
 	        
-		
+	s.start();
 	int[] b = selectionSort(myArray);
 	System.out.println(b);
 	for(int i = 0; i < b.length; i++) {
     	System.out.print(b[i] + " ");
     }
+	s.stop();
+	System.out.println("Time elapsed : " + s.getElapsedTime() + " millisecond ");
 	
 	
 	
@@ -38,7 +40,7 @@ public class ex9_6{
 		for(int i = 0; i < array.length; i++) {
 			int currentMin = array[i];
 			int currentMinIndex = i;
-			for(int j = 0; j < array.length; j++ ) {
+			for(int j = i+1; j < array.length; j++ ) {
 				if(currentMin > array[j]) {
 					currentMin = array[j];
 					currentMinIndex = j;
@@ -82,17 +84,17 @@ class Stopwatch {
 		Stopwatch.endTime =endTime;
 	}
 	
-	public void start(long startTime) {
+	public void start() {
 		Stopwatch.startTime = System.currentTimeMillis();
 		
 	}
-	public void stop(String endTime) {
-		Stopwatch.endTime = System.currentTimeMillis();;
+	public void stop() {
+		Stopwatch.endTime = System.currentTimeMillis();
 		
 	}
 	
 	public long getElapsedTime() {
-		return currentTime;
+		return endTime - startTime;
 	}
 	
 	
