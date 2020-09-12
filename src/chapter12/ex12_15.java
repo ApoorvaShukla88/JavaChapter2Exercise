@@ -5,7 +5,7 @@ import java.io.PrintWriter;
 import java.util.*;
 
 public class ex12_15{
-	public static void main(String[] agrs) throws Exception{
+	public static void main(String[] args) throws FileNotFoundException{
 			
 //				Scanner input = new Scanner(new File("src/chapter12/Exercise12_15.txt"));
 //			if(.exists()) {
@@ -14,32 +14,40 @@ public class ex12_15{
 //			}
 		File file = new File("src/chapter12/Exercise12_15.txt");
 		try {
-			if(file.exists()) 
+			if(file.exists()) {
 		
-		System.out.println("File already exists");
-		System.exit(1);
-		}catch(Exception e) {
-			
-		}
+				System.out.println("File already exists");
+				System.exit(1);
+			}
+			file.createNewFile();
 			PrintWriter output = new PrintWriter(file);
 			for(int i = 0; i < 100 ; i++)
 			{
 			output.print((int)Math.random() * 1000);
 			output.print(" ");
 			}
-//			output.close();
-			
-			Scanner input = new Scanner(file);
-			while(input.hasNext()) {
-				int numbers = input.nextInt();
-				int[] myArray = 
-				
-				
-				
-				
-				
-				
-			}
+			output.close();
+		}catch(Exception e) {
+		
+		}
+		
+		  Scanner input = new Scanner(file);
+		  int[] a = new int[100]; ////
+		  int counter = 0; 
+		  while(input.hasNextInt()) { 
+			  a[counter] = input.nextInt();
+			  counter++; 
+		  }
+		  System.out.println("List before sort "); 
+		  for(int j = 0; j < a.length; j++) { 
+			  System.out.println(a[j] + " "); 
+		  }
+		  //sorting the array
+		  Arrays.sort(a); 
+		  for(int j = 0; j < a.length; j++) { 
+			  System.out.println(a[j] + " ");  
+		  }
+		 			
 	}
 	
 	

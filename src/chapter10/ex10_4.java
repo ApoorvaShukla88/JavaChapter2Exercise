@@ -38,7 +38,7 @@ class MyPoint{
 	
 	public double distance(MyPoint m) {
 		
-		return double ;
+		return 0;
 		
 	}
 	
