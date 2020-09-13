@@ -8,4 +8,7 @@
 #### 6. Nested loops, for loop
 #### 7. Arrays
 #### 8. Multidimensional array
-#### 12. Exception Handling
+#### 9. Objects and Classes
+#### 10. Wrapper class 
+#### 12. Exception Handling && File I/O
+
