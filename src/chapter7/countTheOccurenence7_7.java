@@ -27,9 +27,9 @@ public class countTheOccurenence7_7{
 	
 	public static int countOccurence(int[] array) {
 //		int[] count = new int[10];
-		
+		int counter = 1;
 		for(int i = 0; i < array.length; i++) {
-			int counter = 1;
+
 			for(int j = i+1; j < array.length; j++) {
 				if(array[i] == array[j]) {
 					counter++;	
@@ -39,8 +39,11 @@ public class countTheOccurenence7_7{
 			
 			return counter;		
 			}
+		return counter;
 		
 		}
+
+
 		
 	}
 	

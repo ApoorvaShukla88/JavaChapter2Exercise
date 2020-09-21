@@ -15,7 +15,7 @@ public class WritingToFile{
 			
 			FileWriter output = new FileWriter(file);
 			for(int i = 0; i < 20; i++) {
-				((FileWriter) output).println((int)Math.random() * 10);
+				((FileWriter) output).write((int)Math.random() * 10);
 				System.out.println((int)Math.random() * 10);
 				
 			}

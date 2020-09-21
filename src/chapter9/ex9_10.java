@@ -1,6 +1,6 @@
 package chapter9;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class ex9_10{
 	public static void main(String[] args) {
@@ -14,10 +14,10 @@ public class ex9_10{
 		
 		QuadraticEq qe = new QuadraticEq(a, b, c);
 		double dis = qe.getDiscriminant();
-		System.out.println(dis);
+		System.out.println("Discriminant is " + dis);
 		qe.setDiscriminant(dis);
 		String sol = qe.getSolution();
-		System.out.println(sol);
+		System.out.println("Solution is " + sol);
 		
 		
 		
@@ -29,11 +29,13 @@ class QuadraticEq{
 	private static double a, b, c, d;
 	
 	private static double r1, r2;
+	public QuadraticEq(){}
 	QuadraticEq(double a, double b, double c){
 		this.a = a;
 		this.b = b;
 		this.c= c;
 		getDiscriminant();
+//		System.out.println(getSolution());
 		
 	}
 	
@@ -70,7 +72,7 @@ class QuadraticEq{
 		if(d < 0) {
 			return "No Roots";
 		}else if (d == 0){
-			return "One root only " + getRoot1();
+			return "One root" + getRoot1();
 			}
 		else {
 		return "Two roots :" + getRoot1() + " and " + getRoot2();

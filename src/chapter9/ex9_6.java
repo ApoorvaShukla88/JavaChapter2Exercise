@@ -29,11 +29,7 @@ public class ex9_6{
     }
 	s.stop();
 	System.out.println("Time elapsed : " + s.getElapsedTime() + " millisecond ");
-	
-	
-	
-		
-		
+
 	}
 	
 	public static int[] selectionSort(int[] array) {

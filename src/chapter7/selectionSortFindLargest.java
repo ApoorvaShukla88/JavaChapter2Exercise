@@ -4,7 +4,7 @@ public class selectionSortFindLargest{
 	public static void main(String[] args) {
 		
 		
-		int[] a = findLargest();
+		//int[] a = findLargest();
 	
 		
 	}
