@@ -23,27 +23,35 @@ public class ex11_9_LargestRowAndColumns {
             }
             // count the number of occurence of 1 in rows
         int[] row1count = new int[n];
+        int[] col1count = new int[n];
         for(int row = 0; row < matrix.length; row++){
             for(int j = 0; j < matrix[row].length; j++){
                 if(matrix[row][j] == 1){
                     row1count[row]++;
+                    col1count[j]++;
                 }
+//                System.out.println("Row number : " + j + " count of 1 is "+ col1count[j]);
             }
-            System.out.println("Row number : " + row + " count of 1 is "+ row1count[row]);
+
 
         }
 
-        int max = row1count[0];
+        int maxRow = row1count[0];
+        int maxCol = col1count[0];
         //traverse through counter
         for(int i =1; i < n ; i++){
-            if(max < row1count[i]);
-            max = row1count[i];
+            if(maxRow < row1count[i]){
+            maxRow = row1count[i];
             }
-        System.out.println("Max number of 1s in row number " + max);
+            if(maxCol < col1count[i]){
+                maxCol = col1count[i];
+            }
+
         }
+        System.out.println("The largest row index :  " + maxRow);
+        System.out.println("The largest col index :  " + maxRow + ", " + maxCol);
 
-
-    }
+    }}
 
 
 
