@@ -21,8 +21,6 @@ public class TestCar {
         for(int i =0; i < cars.length; i++){
             System.out.println("Cars after sort price : " + cars[i].getPrice());
         }
-
         System.out.println("C1 : " + c1);
-
     }
 }

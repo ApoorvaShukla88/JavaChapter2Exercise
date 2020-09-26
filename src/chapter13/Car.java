@@ -41,10 +41,6 @@ public class Car implements Comparable<Car>{
         return "VIM" + this.VIM + " MPG " + this.mpg + " PRICE " + this.price;
     }
 
-
-
-
-
     public int VIMcompareTo(Car o) {
         if(this.VIM.compareTo(o.VIM) > 1){
             return 1;
