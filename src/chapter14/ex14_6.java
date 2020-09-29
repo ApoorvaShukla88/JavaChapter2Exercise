@@ -19,20 +19,6 @@ class ex14_6CheckerBoard extends Application {
         pane.setHgap(0);
         pane.setVgap(0);
 
-//        Rectangle square = new Rectangle(30, 30, 30, 30);
-//        square.setStroke(Color.BLACK);
-//        square.setFill(Color.WHITE);
-//        pane.add(square, 0, 0);
-//
-//        Rectangle square1 = new Rectangle(30, 30, 30, 30);
-//        square1.setStroke(Color.BLACK);
-//        square1.setFill(Color.BLACK);
-//        pane.add(square1, 1, 0);
-//
-//        Rectangle square2 = new Rectangle(30, 30, 30, 30);
-//        square2.setStroke(Color.BLACK);
-//        square2.setFill(Color.BLACK);
-//        pane.add(square2, 2, 0);
 for(int j = 0; j < 8; j++) {
     for (int i = 0; i < 8; i++) {
         Rectangle square = new Rectangle(30, 30, 30, 30);
@@ -50,7 +36,9 @@ for(int j = 0; j < 8; j++) {
         }
     }
 }
-
+public static void main(String[] args){
+        launch(args);
+}
 
     }
 
