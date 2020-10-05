@@ -10,7 +10,7 @@ public class ex21_4_countCONsonantsAndVowels {
         int vcounter = 0;
         int ccounter = 0;
         Scanner input = new Scanner(file);
-        //for(int i = 0 ; i < 200; i++){
+
         while(input.hasNext()) {
             String line = input.nextLine();
             String[] charArray = line.split("");
@@ -27,11 +27,26 @@ public class ex21_4_countCONsonantsAndVowels {
         System.out.println("No. of consonants : "+ccounter);
 
 
-        Set<Character> vowels = new HashSet<>();
-        vowels.addAll(Arrays.asList('A', 'I', 'E', 'O', 'U'));
-        if(input.next().charAt(0) == vowels){
-            
-        }
+        //OUTPUT - No. of vowels are : 23
+        //No. of consonants : 75
+
+
+//        Set<Character> vowels = new HashSet<>();
+//        vowels.addAll(Arrays.asList('A', 'I', 'E', 'O', 'U'));
+//        String line = input.nextLine();
+//        String[] charArray = line.split("");
+//       for(int i = 0; i < charArray.length; i++){
+//                  if(vowels[i].equals(charArray[i])){
+//                      vcounter++;
+//                  }else{
+//                      ccounter++;
+//                  }}
+//
+//
+//            System.out.println("No. of vowels are : "+vcounter);
+//       System.out.println("No. of consonants : "+ccounter);
+
+
 //        vowels.add('E');
 //        vowels.add('I');
 //        vowels.add('O');
