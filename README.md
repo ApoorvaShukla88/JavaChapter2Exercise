@@ -10,5 +10,14 @@
 #### 8. Multidimensional array
 #### 9. Objects and Classes
 #### 10. Wrapper class 
+#### 11. Inheritence & Polymorphism
 #### 12. Exception Handling && File I/O
+#### 13. Abstract classes & Interfaces
+#### 14. JAVAFX Basics
+#### 20. Lists, Stacks, Queues, Priority Queues
+#### 21. Sets & Map
+#### 22. Understaning O(N)
+#### 23. Sorting Alogorithms
+
+
 
