@@ -1,0 +1,2 @@
+public class chapter23 {
+}
