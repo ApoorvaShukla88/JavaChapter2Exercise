@@ -26,8 +26,8 @@ package chapter23;
                 pivot = list[last];
             }
             // Choose the first element as the pivot
-            int temp = list[0];
-            list[0] = pivot;
+//            int temp = list[0];
+//            list[0] = pivot;
             
 
             int low = first + 1; // Index for forward search

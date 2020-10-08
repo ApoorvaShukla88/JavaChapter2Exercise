@@ -8,7 +8,7 @@ package Hangman;
 //+getMessage()
 
 public class Hangman{
-	public static int ALLOWED_WRONG_GUESSES  = 6;
+	public static final int ALLOWED_WRONG_GUESSES  = 6;
 	
 	public String message;
 	
