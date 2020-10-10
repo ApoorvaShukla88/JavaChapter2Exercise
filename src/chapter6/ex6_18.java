@@ -22,7 +22,11 @@ public class ex6_18 {
             if(!s.contains("\\.[]{}()<>*+-=!?^$|")){
                 for(int i = 0 ; i < s.length(); i++){
                     if(Character.isDigit(s.charAt(i))){
-                        return true;
+                        haveDidit++;
+                        if(haveDidit >= 2){
+                            return true;
+                        }
+
                     }
                 }
             }
