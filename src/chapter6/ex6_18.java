@@ -6,9 +6,12 @@ public class ex6_18 {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         String pass = input.nextLine();
-
-        System.out.println(checkPassword(pass));
-
+        System.out.println("Enter the password : " + pass);
+        if(checkPassword(pass)){
+            System.out.println("Valid password");
+        }else {
+            System.out.println("Invalid password");
+        }
         }
 
 
